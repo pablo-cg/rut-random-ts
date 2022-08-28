@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  @apply bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 transition-colors;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
