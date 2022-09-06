@@ -3,8 +3,11 @@ import { RouterView } from 'vue-router'
 import ToggleDark from '@/components/ToggleDark.vue'
 import { useTransitions } from './utils'
 import Copyright from './components/Copyright.vue'
+import CountdownTimer from './components/CountdownTimer.vue'
 
 const { defaultTransition } = useTransitions()
+
+const endDate = new Date('2022-09-12T10:00:00.000')
 </script>
 
 <template>
@@ -14,6 +17,9 @@ const { defaultTransition } = useTransitions()
   >
     <div class="absolute right-1 top-1">
       <ToggleDark />
+    </div>
+    <div class="absolute left-1 bottom-1 hidden sm:block">
+      <CountdownTimer :end-date="endDate" />
     </div>
     <main class="px-5 mt-16 w-full">
       <RouterView />
