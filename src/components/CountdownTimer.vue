@@ -74,11 +74,12 @@ const timeUntil = computed(() => {
 onMounted(() => {
   showRemaining()
 })
-
-//  bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50 transition-colors;
 </script>
 <template>
-  <div v-if="timeUntil">
+  <div
+    class="transition-all duration-500"
+    :class="timeUntil ? 'opacity-100' : 'opacity-0'"
+  >
     <h1 class="dark:text-zinc-700 text-zinc-300">GG Timer 🦄</h1>
     <h1 class="dark:text-zinc-700 text-zinc-300">{{ timeUntil }}</h1>
   </div>
