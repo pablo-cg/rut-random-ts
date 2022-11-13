@@ -33,7 +33,7 @@ function generate() {
         {{ title }}
       </h1>
       <slot name="description" />
-      <Button label="Generar" @click="generate" />
+      <Button label="Generar" @click="generate" class="btn-primary" />
     </section>
   </div>
 </template>

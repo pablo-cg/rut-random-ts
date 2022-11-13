@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import Button from './Button.vue'
-import type { Item } from '../types/index'
+import Button from './Button.vue';
+import type { Item } from '../types/index';
 
 interface ItemsProps {
-  items: Item[]
+  items: Item[];
 }
 
-defineProps<ItemsProps>()
+defineProps<ItemsProps>();
 
 function copyItem(item: Item) {
-  item.isCopied = true
-  navigator.clipboard.writeText(item.value)
+  item.isCopied = true;
+  navigator.clipboard.writeText(item.value);
 }
 </script>
 <template>
@@ -27,6 +27,7 @@ function copyItem(item: Item) {
         :label="item.isCopied ? 'Copiado' : 'Copiar'"
         :disabled="item.isCopied"
         @click="copyItem(item)"
+        class="btn-primary"
       />
     </li>
   </ul>
