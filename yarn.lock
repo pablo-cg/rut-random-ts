@@ -32,6 +32,11 @@
   resolved "https://registry.yarnpkg.com/@fiquu/cl-rut/-/cl-rut-4.0.0.tgz#28073b08b46a142e576dc6772b75e1f17fd3d49e"
   integrity sha512-v48g0zAmhF8iUy3yj+p96UTL7xrbHXL8W02st+09/TKUTxG4eMEeICH7dX8gXKZkJqePyCIJlVsGQPGjcMaVGw==
 
+"@headlessui/vue@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.7.4.tgz#c554e9ac893a2ec2f58eb8b6b9d80b8be03c5d0e"
+  integrity sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"
