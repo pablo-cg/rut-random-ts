@@ -1,5 +1,11 @@
+import { useOptionsStore } from '@/stores/options'
 import { validate, format } from '@fiquu/cl-rut'
+import { storeToRefs } from 'pinia'
+
 export const useRutUtils = () => {
+  const optionsStore = useOptionsStore()
+  const { maxRut, minRut } = storeToRefs(optionsStore)
+
   function getRandomNumber(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min
   }
@@ -11,7 +17,7 @@ export const useRutUtils = () => {
   }
 
   function createRutPrototype() {
-    const digits = getRandomNumber(3000000, 27000000)
+    const digits = getRandomNumber(minRut.value, maxRut.value)
     const dv = getRandomDv()
     return `${digits}-${dv}`
   }
