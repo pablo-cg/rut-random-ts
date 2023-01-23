@@ -2,11 +2,10 @@ import { defineStore } from 'pinia'
 import { readonly, ref } from 'vue'
 
 const optionsStore = () => {
-  
   const minRut = ref(1000000)
   const maxRut = ref(27000000)
 
-  const defaultMinRut = readonly(minRut)
+  const defaultMinRut = readonly(ref(1000000))
 
   function setRutDefaultOptions() {
     minRut.value = defaultMinRut.value
